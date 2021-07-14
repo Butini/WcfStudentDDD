@@ -4,7 +4,8 @@ using System.Text;
 
 namespace WcfStudent.Infrastructure.Repository.Contracts
 {
-    public interface IStudentRepository
+    public interface IStudentFactory
     {
+        IStudentProduct NewStudentFile();
     }
 }

@@ -4,17 +4,17 @@ using System.Text;
 
 namespace WcfStudent.Domain.Entity
 {
-    public class File
+    public class FileManager
     {
         string Path { get; set; }
         string FileName { get; set; }
         string Extension { get; set; }
 
-        public File()
+        public FileManager()
         {
         }
 
-        public File(string path, string fileName, string extension)
+        public FileManager(string path, string fileName, string extension)
         {
             Path = path;
             FileName = fileName;
@@ -23,7 +23,7 @@ namespace WcfStudent.Domain.Entity
 
         public override bool Equals(object obj)
         {
-            return obj is File file &&
+            return obj is FileManager file &&
                    Path == file.Path &&
                    FileName == file.FileName &&
                    Extension == file.Extension;

@@ -110,3 +110,16 @@ File:
 	- Path
 	- FileName
 	- Extension
+
+### 4.1 Repositorio: Generics
+
+Antes de crear los contratos, sabemos que los archivos tienen permisos de lectura y escritura, además, depende del tipo de archivo al que tenemos que
+leer, este se tendrá que serializar de una forma distinta. Podemos separar los métodos en 3 clases genéricas, una de lectura, otra de escritura y otra
+para serializar ficheros. Esto nos permite implementar la segregación de interfaces por si en un futuro debemos crear nuevos métodos, por ejemplo,
+donde requiera permisos de solo lectura o escritura de un fichero.
+
+### 4.2 Contratos
+
+Implementamos una factoria de ficheros de Students, consiste en 2 interfaces donde uno se encarga de devolver la interfaz que implementa los
+métodos. De esta manera, podemos crear más de un tipo de Fichero que necesitemos en la capa de aplicación, además de realizar una inyección de
+dependencia con la interfaz factory.
