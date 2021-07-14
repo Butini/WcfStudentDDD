@@ -60,5 +60,30 @@ Click derecho al proyecto/Propiedades/Web/Página específica/Nombre_Del_Servido
 También agregaremos con Nugget las siguientes librerias, que nos permitirá realizar inyecciones en nuestro proyecto Wcf:
 
 WcfStudent.Distributed.WebServices -> Autofac / Autofac.Wcf
+
 WcfStudent.Application.Services -> Autofac
 
+### 2. Configuración Web y Protocolos
+
+Primero creamos el servicio:
+
+*(**ADVERTENCIA:** Recordar primero de compilar y comprobar que el servidor WCF se ejecuta correctamente.)*
+
+1. Click derecho a Web.config/Editar configuración de WCF
+2. Carpeta de servicios y crear un servicio nuevo
+3. Buscamos la Dll de nuestro servidor
+4. Buscamos el contrato de nuestro servidor
+5. Seleccionamos Http
+6. Elegimos la primera opción (Interopabilidad básica)
+7. Escribimos la dirección con el nombre de nuestro archivo svc
+8. Finalizar
+9. Antes de cerrar la ventana, guardar
+
+Vamos a agregar los protocolos Soap y Rest modificando el archivo Web.Config.
+
+En el momento que hemos agregado la configuración anterior, esta ya nos proporciona una configuración Soap (Solo faltaria identificarlo con un nombre).
+Para poder añadir el protocolo Rest, solo debemos agregar un nuevo endpoint dentro del path service sin agregar un servidor y añadiendo el binding webHttpBinding.
+También es necesario agregar el path endpointBehaivor con el Behaivor de nombre Web para que funcione correctamente.
+
+Compilamos y comprobamos que el servidor sigue funcionando. Más adelante aremos la implementación del servidor con la configuración necesaria para el protocolo Soap
+y Rest.
