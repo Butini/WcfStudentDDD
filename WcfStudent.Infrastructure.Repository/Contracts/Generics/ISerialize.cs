@@ -5,7 +5,7 @@ using WcfStudent.Domain.Entity;
 
 namespace WcfStudent.Infrastructure.Repository.Contracts.Generics
 {
-    interface ISerialize<T>
+    public interface ISerialize<T>
     {
         void Serialize(FileManager fileManager, List<T> list);
         List<T> Deserialize(FileManager fileManager);

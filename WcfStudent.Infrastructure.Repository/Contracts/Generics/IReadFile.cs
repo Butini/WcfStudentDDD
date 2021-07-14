@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WcfStudent.Infrastructure.Repository.Contracts.Generics
 {
-    interface IReadFile<T, U>
+    public interface IReadFile<T, U>
     {
         U Get(T value);
         List<U> GetAll();
