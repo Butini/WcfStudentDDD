@@ -8,12 +8,17 @@ Las implementaciones usadas en este proyecto:
 
 - Arquitectura DDD
 - Inyección con Autofac
-- Segregación de interfaces
 - Factorías (Factory pattern)
 - Adaptación (Adapter pattern)
 - WCF
 - Configuración de protocolos (Rest y Soap)
 - Logger Log4Net y Serilog
+- Princpios SOLID
+	- Responsabilidad Única
+	- Principio Abierto y Cerrado
+	- Substitución de Liskov
+	- Segregación de interfaces
+	- Inversión de dependencias
 
 ## Proceso
 
@@ -87,3 +92,21 @@ También es necesario agregar el path endpointBehaivor con el Behaivor de nombre
 
 Compilamos y comprobamos que el servidor sigue funcionando. Más adelante aremos la implementación del servidor con la configuración necesaria para el protocolo Soap
 y Rest.
+
+### 3 . Entidades del dominio
+
+Importante empezar con las entidades del proyecto, ya que serán la base.
+
+En nuestro proyecto tiene 2 entidades:
+
+Student:
+	- StudentId
+	- Name
+	- Surname
+	- Age
+	- Birthday
+	
+File:
+	- Path
+	- FileName
+	- Extension
