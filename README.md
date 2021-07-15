@@ -84,7 +84,7 @@ También es necesario agregar el path endpointBehaivor con el Behaivor de nombre
 Compilamos y comprobamos que el servidor sigue funcionando. Más adelante aremos la implementación del servidor con la configuración necesaria para el protocolo Soap
 y Rest.
 
-### 3 . Entidades del dominio
+### 3. Entidades del dominio
 
 Importante empezar con las entidades del proyecto, ya que serán la base.
 
@@ -96,3 +96,11 @@ Student:
 	- Surname
 	- Age
 	- Birthday
+	
+### 4.1. Infrastructure: Utils
+
+Se ha creado un proyecto nuevo con metodos por separado ha Repository para seguir el principio de SRP y poder separar cada funcionalidad
+en una casa. Se ha creado los proyectos de FileManager y Serilace.
+
+FileManager -> Controla el fichero.
+Serilace -> Lee y escribe un fichero.
