@@ -6,11 +6,11 @@ namespace WcfStudent.Domain.Entity
 {
     public class Student
     {
-        int StudentId { get; set; }
-        string Name { get; set; }
-        string Surname { get; set; }
-        int Age { get; set; }
-        DateTime Birthday { get; set; }
+        public int StudentId { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Age { get; set; }
+        public DateTime Birthday { get; set; }
 
         public Student()
         {

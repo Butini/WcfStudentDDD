@@ -6,9 +6,9 @@ namespace WcfStudent.Domain.Entity
 {
     public class FileManager
     {
-        string Path { get; set; }
-        string FileName { get; set; }
-        string Extension { get; set; }
+        public string Path { get; set; }
+        public string FileName { get; set; }
+        public string Extension { get; set; }
 
         public FileManager()
         {
