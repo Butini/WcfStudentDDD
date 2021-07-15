@@ -6,5 +6,6 @@ namespace WcfStudent.Application.Services.Contracts
 {
     public interface IStudentAppService
     {
+        
     }
 }

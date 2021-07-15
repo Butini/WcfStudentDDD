@@ -40,33 +40,24 @@ Con un proyecto en blanco, primero se van a crear los directorios y proyectos co
 			- StudentAppService.cs
 
 - Domain Layer
+	- WcfStudent.Domain.StudentMain
+		- Contracts
+			- Repository
+				- IStudentRepository
 	- WcfStudent.Domain.Entity
 		- Student.cs
-	- WcfStudent.Domain.Logger
-		- Interfaces
-			- ITargetAdapterForLogger
-		- Log4Net.cs
-		- Serilog.cs
+
 
 - Infrastructure Layer
 	- WcfStudent.Infrastructure.Repository
-		- Contracts
-			- IStudentRepository.cs
 		- Implementation
 			- StudentRepository.cs
-
-Al crear la estructura DDD del proyecto, hay que recordar que al cambiar el nombre de nuestro archivo servidor svc / svc.cs, tenemos que
-cambiar en el interior del archivo svc el path Service con el nombre nuevo. Para ver la configuración del servidor.svc hay que pulsar
-clic derecho/Ver marcador.
-
-Es recomendable cambiar las Propiedades de ejecución del proyecto WcfStudent.Distributed.WebServices para que inicie directamente el servidor: 
-Click derecho al proyecto/Propiedades/Web/Página específica/Nombre_Del_Servidor.svc.
-
-También agregaremos con Nugget las siguientes librerias, que nos permitirá realizar inyecciones en nuestro proyecto Wcf:
-
-WcfStudent.Distributed.WebServices -> Autofac / Autofac.Wcf
-
-WcfStudent.Application.Services -> Autofac
+	- WcfStudent.Infrastructure.Util
+		- Contracts
+			- ISerilace
+		- Implementation
+			- FileManager
+			- Serilace
 
 ### 2. Configuración Web y Protocolos
 
@@ -97,7 +88,7 @@ y Rest.
 
 Importante empezar con las entidades del proyecto, ya que serán la base.
 
-En nuestro proyecto tiene 2 entidades:
+En nuestro proyecto tiene 1 entidad:
 
 Student:
 	- StudentId
@@ -105,21 +96,3 @@ Student:
 	- Surname
 	- Age
 	- Birthday
-	
-File:
-	- Path
-	- FileName
-	- Extension
-
-### 4.1 Repositorio: Generics
-
-Antes de crear los contratos, sabemos que los archivos tienen permisos de lectura y escritura, además, depende del tipo de archivo al que tenemos que
-leer, este se tendrá que serializar de una forma distinta. Podemos separar los métodos en 3 clases genéricas, una de lectura, otra de escritura y otra
-para serializar ficheros. Esto nos permite implementar la segregación de interfaces por si en un futuro debemos crear nuevos métodos, por ejemplo,
-donde requiera permisos de solo lectura o escritura de un fichero.
-
-### 4.2 Contratos
-
-Implementamos una factoria de ficheros de Students, consiste en 2 interfaces donde uno se encarga de devolver la interfaz que implementa los
-métodos. De esta manera, podemos crear más de un tipo de Fichero que necesitemos en la capa de aplicación, además de realizar una inyección de
-dependencia con la interfaz factory.

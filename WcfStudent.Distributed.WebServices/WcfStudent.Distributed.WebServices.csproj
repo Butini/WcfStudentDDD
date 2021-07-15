@@ -121,10 +121,6 @@
       <Project>{275904db-ba16-40c3-aec9-c3dc9fd3d0b7}</Project>
       <Name>WcfStudent.Domain.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WcfStudent.Domain.Logger\WcfStudent.Domain.Logger.csproj">
-      <Project>{6584b4cc-0bb7-4328-9fad-c26b09f22205}</Project>
-      <Name>WcfStudent.Domain.Logger</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
