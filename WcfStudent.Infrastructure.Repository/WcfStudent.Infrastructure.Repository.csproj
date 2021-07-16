@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WcfStudent.Domain.Entity\WcfStudent.Domain.Entity.csproj" />
+    <ProjectReference Include="..\WcfStudent.Domain.StudentMain\WcfStudent.Domain.StudentMain.csproj" />
+    <ProjectReference Include="..\WcfStudent.Infrastructure.Utils\WcfStudent.Infrastructure.Utils.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -21,6 +21,8 @@ namespace WcfStudent.Domain.Entity
             Name = name;
             Surname = surname;
             Birthday = birthday;
+
+            Age = GetAgeByBirthday(Birthday);
         }
 
         public Student(int studentId, string name, string surname, int age, DateTime birthday)
@@ -51,6 +53,16 @@ namespace WcfStudent.Domain.Entity
             hashCode = hashCode * -1521134295 + Age.GetHashCode();
             hashCode = hashCode * -1521134295 + Birthday.GetHashCode();
             return hashCode;
+        }
+
+        private int GetAgeByBirthday(DateTime birthday)
+        {
+            int age = 0;
+            age = DateTime.Today.Year - birthday.Year;
+
+            if (DateTime.Today.DayOfYear < birthday.DayOfYear) age--;
+
+            return age;
         }
     }
 }
