@@ -7,7 +7,7 @@ using WcfStudent.Infrastructure.Utils.Contracts;
 
 namespace WcfStudent.Infrastructure.Utils.Implementation
 {
-    class SerilaceTxt : ISerilace<Student>
+    public class SerilaceTxt : ISerilace<Student>
     {
         public List<Student> Deserilace(string path)
         {
@@ -36,17 +36,14 @@ namespace WcfStudent.Infrastructure.Utils.Implementation
             return list;
         }
 
-        public void Serilace(List<Student> list, string path)
+        public void Serilace(Student obj, string path)
         {
             File.WriteAllText(path, "");
 
             using (StreamWriter sr = new StreamWriter(path, true))
             {
-                foreach (var student in list)
-                {
-                    string text = TxtFormat(student);
-                    sr.WriteLine(text);
-                }
+                string text = TxtFormat(obj);
+                sr.WriteLine(text);
             }
         }
 

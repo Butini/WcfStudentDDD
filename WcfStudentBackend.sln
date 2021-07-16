@@ -19,11 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WcfStudent.Domain.Entity", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WcfStudent.Infrastructure.Repository", "WcfStudent.Infrastructure.Repository\WcfStudent.Infrastructure.Repository.csproj", "{8BD30666-9E8C-4AF8-A718-CA52325554D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba.Infrastructura", "Prueba.Infrastructura\Prueba.Infrastructura.csproj", "{506E3792-E5E5-476B-8447-65ACA6979E39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WcfStudent.Domain.StudentMain", "WcfStudent.Domain.StudentMain\WcfStudent.Domain.StudentMain.csproj", "{55151A82-B10D-46DB-A39E-34EB4C3DC9FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfStudent.Domain.StudentMain", "WcfStudent.Domain.StudentMain\WcfStudent.Domain.StudentMain.csproj", "{55151A82-B10D-46DB-A39E-34EB4C3DC9FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfStudent.Infrastructure.Utils", "WcfStudent.Infrastructure.Utils\WcfStudent.Infrastructure.Utils.csproj", "{7A11A21B-CEEB-4843-A41F-B3A305249555}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WcfStudent.Infrastructure.Utils", "WcfStudent.Infrastructure.Utils\WcfStudent.Infrastructure.Utils.csproj", "{7A11A21B-CEEB-4843-A41F-B3A305249555}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +45,6 @@ Global
 		{8BD30666-9E8C-4AF8-A718-CA52325554D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BD30666-9E8C-4AF8-A718-CA52325554D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BD30666-9E8C-4AF8-A718-CA52325554D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{506E3792-E5E5-476B-8447-65ACA6979E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{506E3792-E5E5-476B-8447-65ACA6979E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{506E3792-E5E5-476B-8447-65ACA6979E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{506E3792-E5E5-476B-8447-65ACA6979E39}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55151A82-B10D-46DB-A39E-34EB4C3DC9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55151A82-B10D-46DB-A39E-34EB4C3DC9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55151A82-B10D-46DB-A39E-34EB4C3DC9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,7 +62,6 @@ Global
 		{70630F35-2203-4263-BB73-93587B7A78B7} = {7DECB47A-D974-454E-AF71-FE612383DEFE}
 		{275904DB-BA16-40C3-AEC9-C3DC9FD3D0B7} = {EF746870-EC96-4C06-852E-0EB8D1C49A1D}
 		{8BD30666-9E8C-4AF8-A718-CA52325554D5} = {20263059-75B3-4FDA-A3CE-DFCF287D4E0F}
-		{506E3792-E5E5-476B-8447-65ACA6979E39} = {20263059-75B3-4FDA-A3CE-DFCF287D4E0F}
 		{55151A82-B10D-46DB-A39E-34EB4C3DC9FE} = {EF746870-EC96-4C06-852E-0EB8D1C49A1D}
 		{7A11A21B-CEEB-4843-A41F-B3A305249555} = {20263059-75B3-4FDA-A3CE-DFCF287D4E0F}
 	EndGlobalSection

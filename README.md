@@ -15,7 +15,6 @@ Las implementaciones usadas en este proyecto:
 - Logger Log4Net y Serilog
 - Princpios SOLID
 	- Responsabilidad Única
-	- Principio Abierto y Cerrado
 	- Substitución de Liskov
 	- Segregación de interfaces
 	- Inversión de dependencias
@@ -104,3 +103,5 @@ en una casa. Se ha creado los proyectos de FileManager y Serilace.
 
 FileManager -> Controla el fichero.
 Serilace -> Lee y escribe un fichero.
+
+### 4.2. 

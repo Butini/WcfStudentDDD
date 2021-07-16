@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WcfStudent.Domain.Entity\WcfStudent.Domain.Entity.csproj" />
     <ProjectReference Include="..\WcfStudent.Domain.StudentMain\WcfStudent.Domain.StudentMain.csproj" />
+    <ProjectReference Include="..\WcfStudent.Infrastructure.Repository\WcfStudent.Infrastructure.Repository.csproj" />
   </ItemGroup>
 
 </Project>
