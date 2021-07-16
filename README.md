@@ -8,8 +8,6 @@ Las implementaciones usadas en este proyecto:
 
 - Arquitectura DDD
 - Inyección con Autofac
-- Factorías (Factory pattern)
-- Adaptación (Adapter pattern)
 - WCF
 - Configuración de protocolos (Rest y Soap)
 - Logger Log4Net y Serilog
@@ -103,5 +101,3 @@ en una casa. Se ha creado los proyectos de FileManager y Serilace.
 
 FileManager -> Controla el fichero.
 Serilace -> Lee y escribe un fichero.
-
-### 4.2. 
